@@ -30,4 +30,4 @@ El script se ejecuta periódicamente vía cron en la VPS para mantener los datos
 
 ## 🔑 API Key
 
-Ticket ChileCompra: CD89C6AC-C570-4BE6-BF0F-B25C35393FAB
+Ticket ChileCompra: 
