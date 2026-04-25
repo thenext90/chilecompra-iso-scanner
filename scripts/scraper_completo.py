@@ -11,7 +11,8 @@ import time
 import os
 from datetime import datetime, timedelta
 
-TICKET = "CD89C6AC-C570-4BE6-BF0F-B25C35393FAB"
+import os
+TICKET = os.environ.get("CHILECOMPRA_TICKET", "")
 BASE_URL = "https://api.mercadopublico.cl/servicios/v1/publico"
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA_DIR = os.path.join(BASE_DIR, "data")
@@ -33,6 +34,9 @@ PALABRAS_ISO = [
 ]
 
 def run():
+    if not TICKET:
+        print("❌ CHILECOMPRA_TICKET no configurada")
+        return
     print("=" * 65)
     print("  CHILECOMPRA ISO SCANNER")
     print(f"  {datetime.now().strftime('%d/%m/%Y %H:%M')}")
