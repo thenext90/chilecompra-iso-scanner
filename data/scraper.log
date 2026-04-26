@@ -1,0 +1,44 @@
+Traceback (most recent call last):
+  File "/home/alwyzon/chilecompra-iso-scanner/magochic_scraper.py", line 537, in <module>
+    main()
+  File "/home/alwyzon/chilecompra-iso-scanner/magochic_scraper.py", line 481, in main
+    conn = setup_db()
+           ^^^^^^^^^^
+  File "/home/alwyzon/chilecompra-iso-scanner/magochic_scraper.py", line 120, in setup_db
+    conn.execute("""
+sqlite3.OperationalError: no such column: norma
+Updating 27fa39c..08d9ac6
+Fast-forward
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+=================================================================
+  CHILECOMPRA ISO SCANNER
+  26/04/2026 10:30
+=================================================================
+
+📡 Obteniendo licitaciones (últimos 7 días)...
+  26/04 (p1): 0 lic.
+  26/04 (p2): 0 lic.
+  25/04 (p1): 15 lic.
+  25/04 (p2): 15 lic.
+  24/04 (p1): 1170 lic.
+  24/04 (p2): 1170 lic.
+  23/04 (p1): 1073 lic.
+  23/04 (p2): 1073 lic.
+  22/04 (p1): 1049 lic.
+  22/04 (p2): 1049 lic.
+  21/04 (p1): 1077 lic.
+  21/04 (p2): 1077 lic.
+  20/04 (p1): 1481 lic.
+  20/04 (p2): 1481 lic.
+
+  Total crudo: 11730 licitaciones
+  Aseo/limpieza: 400
+
+  📊 RESULTADOS:
+     Total licitaciones (7 días): 11730
+     De aseo/limpieza: 400
+     Con posibles requisitos ISO: 2
+     Por tipo: {"LP": 78, "LE": 238, "L1": 46, "LR": 24, "CO": 6, "B2": 4, "I2": 2, "O1": 2}
+
+  ✅ Guardado: /home/alwyzon/chilecompra-iso-scanner/data/licitaciones_aseo_estructurado.json
